@@ -21,23 +21,6 @@ async def hello(ctx):
     await ctx.send("Hello!")
 
 
-@client.command()
-async def join(ctx):
-    try:
-        channel = ctx.author.voice.channel
-        await channel.connect()
-    except AttributeError as e:
-        await ctx.send("You are not connected to a voice channel, buddy!")
-
-
-@client.command()
-async def leave(ctx):
-    try:
-        await ctx.voice_client.disconnect()
-    except AttributeError as e:
-        await ctx.send("I am not connected to a voice channel, buddy!")
-
-
 @client.event
 async def on_message(message):
     author = message.author.name

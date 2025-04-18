@@ -17,6 +17,7 @@ This is a quick demo to show you how to use Ollama to have LLMs of your own runn
 - Put your Discord token in the discord_bot_token property
 - Run main.py
 
-## Use
+## Usage
 
-- 
+- You can either DM your App or mention it on a server (@) to ask it any question you have.
+- There is a sample $hello command as well; you can implement any custom commands you wish :)
